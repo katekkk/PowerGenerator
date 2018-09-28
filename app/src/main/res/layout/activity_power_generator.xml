@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PowerGenerator">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/text4"
+        app:layout_constraintEnd_toStartOf="@+id/pow3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="5"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pow5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="4"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/text5"
+        app:layout_constraintEnd_toStartOf="@+id/pow4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="11dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/text3"
+        app:layout_constraintEnd_toStartOf="@+id/pow2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/equal4"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/equal5"
+        app:layout_constraintEnd_toStartOf="@+id/result4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pow4"
+        app:layout_constraintTop_toBottomOf="@+id/equal3" />
+
+    <Button
+        android:id="@+id/equal5"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/result5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pow5"
+        app:layout_constraintTop_toBottomOf="@+id/equal4" />
+
+    <Button
+        android:id="@+id/equal3"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/equal4"
+        app:layout_constraintEnd_toStartOf="@+id/result3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pow3"
+        app:layout_constraintTop_toBottomOf="@+id/equal2" />
+
+    <Button
+        android:id="@+id/equal2"
+        android:layout_width="40dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        android:text="="
+        app:layout_constraintEnd_toStartOf="@+id/result2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pow2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pow4"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pow5"
+        app:layout_constraintEnd_toStartOf="@+id/equal4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text4"
+        app:layout_constraintTop_toBottomOf="@+id/pow3" />
+
+    <EditText
+        android:id="@+id/pow5"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equal5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text5"
+        app:layout_constraintTop_toBottomOf="@+id/pow4" />
+
+    <EditText
+        android:id="@+id/pow3"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pow4"
+        app:layout_constraintEnd_toStartOf="@+id/equal3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text3"
+        app:layout_constraintTop_toBottomOf="@+id/pow2" />
+
+    <EditText
+        android:id="@+id/pow2"
+        android:layout_width="24dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pow3"
+        app:layout_constraintEnd_toStartOf="@+id/equal2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result3"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="60dp"
+        android:text="1.00"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/result4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/equal3"
+        app:layout_constraintTop_toBottomOf="@+id/result2"
+        tools:text="1.00" />
+
+    <TextView
+        android:id="@+id/result5"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:text="1.00"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/equal5"
+        app:layout_constraintTop_toBottomOf="@+id/result4"
+        tools:text="1.00" />
+
+    <TextView
+        android:id="@+id/result4"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:text="1.00"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/result5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/equal4"
+        app:layout_constraintTop_toBottomOf="@+id/result3"
+        tools:text="1.00" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="64dp"
+        android:text="1.00"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/result3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/equal2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="1.00" />
+
+</android.support.constraint.ConstraintLayout>
